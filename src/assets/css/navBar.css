@@ -1,0 +1,84 @@
+.top-header a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .MuiAppBar-positionFixed{
+    position: sticky !important;
+  }
+  .top-header a:hover{
+    color: #fff;
+  }
+  .MuiButton-text {
+    padding: 6px 14px !important;
+  }
+  .top-header{
+    background: rgba(0, 0, 0, 0.9) !important;
+  }
+  .desktop_nav{
+    margin: auto;
+    list-style-type: none;
+  }
+  .desktop_nav li{
+    display: inline;
+    padding: 12px;
+  }
+  .desktop_nav li a{
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      position: relative;
+      text-transform: uppercase;
+  }
+  .desktop_nav li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .desktop_nav li .active:before, .desktop_nav li a:hover:before{
+    visibility: visible;
+    width: 80%;
+  }
+  .mobile_menu{
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  .bar_close{
+    position: absolute;
+      top: 15px;
+      right: 15px;
+  }
+  .mobile_menu ul{
+    padding: 0px;
+    list-style-type: none;
+  }
+  .mobile_menu li{
+    position: relative;
+    padding: 10px 20px;
+  }
+  .mobile_menu li a{
+    font-size: 15px;
+    color: #4e4e4e;
+    white-space: nowrap;
+      transition: 0.3s;
+      letter-spacing: 0.4px;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  .mobile_menu a:hover{
+    color: #0078ff;
+  }
+  
